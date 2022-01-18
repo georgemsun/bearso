@@ -193,10 +193,10 @@ div#wrap {
 	padding-bottom: 50px;
 }
 .main .container.graphic {
-	background-image: url(/src/assets/figures/shuttle-background-top.svg);
+	background-image: url(/src/img/figures/shuttle-background-top.svg);
 }
 .main img.graphic {
-	content: url(/src/assets/figures/shuttle-background-bottom.svg);
+	content: url(/src/img/figures/shuttle-background-bottom.svg);
 	min-height: 60px;
 }
 .main .tiles > div {
@@ -758,10 +758,10 @@ button.orange:focus {
 /*** MEDIA AND RESPONSIVE ***/
 @media (min-width: 1200px) {
 	.main .container.graphic {
-		background-image: url(/src/assets/figures/shuttle-background-wide-top.svg);
+		background-image: url(/src/img/figures/shuttle-background-wide-top.svg);
 	}
 	.main img.graphic {
-		content: url(/src/assets/figures/shuttle-background-wide-bottom.svg);
+		content: url(/src/img/figures/shuttle-background-wide-bottom.svg);
 	}
 	.main .tiles > div.content {
 		width: calc(75% - 20px);
