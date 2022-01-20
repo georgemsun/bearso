@@ -87,6 +87,9 @@ div#wrap {
 	margin-bottom: 7.5px;
 	word-break: break-word;
 }
+.container li {
+	margin-top: 10px;
+}
 .container .indent {
 	margin-left: 50px;
 }
@@ -97,14 +100,13 @@ div#wrap {
 }
 .container ul {
 	list-style: none;
-
 }
 .container ul li::before {
 	color: var(--white);
 	content: "-";
 	display: inline-block;
 	margin-left: -10px;
-	width: 25px;
+	width: 20px;
 }
 .container a:focus {
 	font-weight: bold;
@@ -190,7 +192,7 @@ div#wrap {
 }
 .main .container {
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 }
 .main .container.graphic {
 	background-image: url(/src/img/figures/shuttle-background-top.svg);
@@ -413,7 +415,7 @@ div#wrap {
 	border-top-color: #cccccc;
 	border-top-style: solid;
 	border-top-width: 0.5px;
-	width: calc(100% - 20px);
+	width: calc(100% - 20px) !important;
 }
 .footer .icons {
 	text-align: right;
@@ -423,13 +425,10 @@ div#wrap {
 	border-color: transparent;
 	border-style: solid;
 	border-width: 1px;
-	display: inline-block;
-	height: 30px;
-	margin: 0 2.5px;
-	padding: 0 2.5px;
+	margin: 0 5px;
 }
 .footer .icons a:focus {
-	border-color: var(--white);
+	border-bottom-color: var(--white);
 	text-decoration: none;
 }
 .footer .icons img {
@@ -623,6 +622,7 @@ button.orange:focus {
 .accordion > h3.active + div {
 	padding-top: 5px;
 	padding-bottom: 10px;
+	visibility: visible;
 }
 .accordion > div {
 	margin: 0;
@@ -630,6 +630,7 @@ button.orange:focus {
 	overflow: hidden;
 	padding: 0 20px;
 	transition: max-height 0.2s ease-out;
+	visibility: hidden;
 }
 .accordion.yellow > h3,
 .accordion > h3.yellow {
@@ -817,9 +818,6 @@ button.orange:focus {
 		border: none;
 		color: var(--white);
 	}
-	.header:not(.main) .container {
-		padding-top: 15px;
-	}
 }
 @media (max-width: 900px) {
 	.banner,
@@ -839,6 +837,9 @@ button.orange:focus {
 	.container {
 		padding-top: 10px;
 		padding-bottom: 22px;
+	}
+	.header:not(.main) .container {
+		/*padding-top: 20px;*/
 	}
 }
 @media (max-width: 800px) {
@@ -936,7 +937,7 @@ button.orange:focus {
 		text-transform: none;
 	}
 	a[href=""]:after {
-		content:  '' !important;
+		content: '' !important;
 	}
 	.buttons a[href]:after,
 	a.button[href]:after {
