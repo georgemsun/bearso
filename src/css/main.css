@@ -30,11 +30,14 @@ html, body {
 body {
 	padding-top: 100px;
 }
-div, h1, h2, h3, h4, h5, h6, p, b, a, tr, th, td, ul, ol, li, img {
+div, h1, h2, h3, h4, h5, h6, p, a, tr, th, td, ul, ol, li, img {
 	margin: 0;
 	padding: 0;
 	color: var(--white);
 	outline: none;
+}
+p a {
+	color: inherit;
 }
 b {
 	font-weight: 800;
@@ -252,6 +255,32 @@ div#wrap {
 	background-repeat: no-repeat;
 	background-size: 100%;
 	display: block;
+}
+.banner,
+.banner.container {
+	display: block;
+	font-weight: 400;
+	letter-spacing: 1px;
+	padding-top: 18px;
+	padding-bottom: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.banner,
+.banner.blue {
+	background-color: var(--primary-blue);
+	color: var(--white);
+}
+.banner.orange {
+	background-color: var(--primary-orange);
+	color: var(--white);
+}
+.banner.yellow {
+	background-color: var(--primary-yellow);
+	color: var(--primary-black);
+}
+.banner:focus {
+	text-decoration: underline;
 }
 
 /*** NAVIGATION ***/
